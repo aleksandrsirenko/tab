@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page</title>
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">ToDo</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="input-group mb60 col-sm-8 col-sm-offset-2">
+                <input type="text" class="form-control" id="addText" placeholder="New task..." />
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-success" id="saveText">Save</button>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default col-sm-8 col-sm-offset-2">
+                <div class="panel-body my-panel">
+                    <div class="checkbox task-row">
+                        <button class="close" type="button">
+                            <i class="fa fa-times remove-icon" aria-hidden="true"></i>
+                        </button>
+                        <label><input type="checkbox" class="check" value="">Learn Html</label>
+                    </div>
+                    <div class="checkbox task-row">
+                        <button class="close" type="button">
+                            <i class="fa fa-times remove-icon" aria-hidden="true"></i>
+                        </button>
+                        <label><input type="checkbox" class="check" value="">Learn JQuery</label>
+                    </div>
+                    <div class="checkbox task-row">
+                        <button class="close" type="button">
+                            <i class="fa fa-times remove-icon" aria-hidden="true"></i>
+                        </button>
+                        <label><input type="checkbox" class="check" value="">Meet Angular</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            
+
+
+    <script src="libs/jquery-3.1.1.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/common.js"></script>
+</body>
+</html>
