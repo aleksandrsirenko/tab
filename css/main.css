@@ -35,3 +35,14 @@
 text-decoration: line-through;
 color: #DDDDDD;
 }
+
+
+#newTask {
+    position: relative;
+}
+#newTask .error-message {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    color: #FF465F;
+}

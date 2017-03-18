@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page</title>
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
@@ -19,17 +19,18 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="input-group mb60 col-sm-8 col-sm-offset-2">
+            <div class="input-group mb60 col-sm-8 col-sm-offset-2" id="newTask">
                 <input type="text" class="form-control" id="addText" placeholder="New task..." />
-                <span class="input-group-btn">
+                <div class="input-group-btn">
                     <button type="submit" class="btn btn-success" id="saveText">Save</button>
-                </span>
+                </div>
             </div>
+
         </div>
         <div class="row">
             <div class="panel panel-default col-sm-8 col-sm-offset-2">
-                <div class="panel-body my-panel">
-                    <div class="checkbox task-row">
+                <div class="panel-body my-panel" id="box">
+                    <!--<div class="checkbox task-row">
                         <button class="close" type="button">
                             <i class="fa fa-times remove-icon" aria-hidden="true"></i>
                         </button>
@@ -46,7 +47,7 @@
                             <i class="fa fa-times remove-icon" aria-hidden="true"></i>
                         </button>
                         <label><input type="checkbox" class="check" value="">Meet Angular</label>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -58,6 +59,7 @@
 
     <script src="libs/jquery-3.1.1.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/taskService.js"></script>
     <script src="scripts/common.js"></script>
 </body>
 </html>
