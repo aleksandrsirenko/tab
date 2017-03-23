@@ -1,6 +1,6 @@
 ﻿var taskService = (function () {
     return {
-        baseUrl: 'http://learn-todo.gear.host/api/tasks',
+        baseUrl: 'http://learn-todo.gear.host/api/tasksf',
         getTasks: function () {
             var self = this;
             $.ajax({
@@ -15,6 +15,7 @@
                 },
                 error: function (response) {
                     console.log('Error', response);
+                    showErrorAlert("Data cannot be received");
                 }
             })
         },
@@ -30,6 +31,7 @@
                 },
                 error: function (response) {
                     console.log('Error', response);
+                    showErrorAlert();
                 }
             })
         },
@@ -44,6 +46,7 @@
                 },
                 error: function (response) {
                     console.log('Error', response);
+                    showErrorAlert();
                 }
             })
         },
@@ -58,6 +61,7 @@
                 },
                 error: function (response) {
                     console.log('error', response);
+                    showErrorAlert();
                 }
             })
         }

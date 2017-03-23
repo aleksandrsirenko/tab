@@ -22,7 +22,8 @@ $('.my-panel').on('click', '.remove-icon', function () {
 });
 
 
-$('#saveText').click(function () {
+$('#taskForm').submit(function (event) {
+    event.preventDefault();
     var title = $('#addText').val();
     if (title.trim() != '') {
         var task = {
@@ -52,4 +53,20 @@ function showErrorMessage(message) {
     el.addClass('error-message');
     el.text(message);
     input.after(el);
+}
+
+
+function showErrorAlert(text) {
+    var textError = text || "Error during the process";
+    var alert = '<div class="alert alert-danger error-alert">';
+    alert += '<span class="close" onclick="closeErrorAlert()">&times;</span>' + textError + '</div>';
+    var block = document.createElement('div');
+    $(block).addClass('blocked');
+    $('body').append(alert);
+    $('body').append(block);
+}
+
+function closeErrorAlert() {
+    $('.error-alert').remove();
+    $('.blocked').remove();
 }
