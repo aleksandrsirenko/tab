@@ -1,6 +1,6 @@
 ﻿var taskService = (function () {
     return {
-        baseUrl: 'http://learn-todo.gear.host/api/tasksf',
+        baseUrl: 'http://learn-todo.gear.host/api/tasks',
         getTasks: function () {
             var self = this;
             $.ajax({

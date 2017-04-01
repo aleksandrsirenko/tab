@@ -1,5 +1,5 @@
 ﻿
-taskService.getTasks();
+//taskService.getTasks();
 
 
 $('.my-panel').on('click', '.check', function () {

@@ -1,26 +1,15 @@
-﻿.top-line {
-    background: #248EB8;
-    margin-bottom: 30px;
-}
-.brand {
-    font-size: 18px;
-}
-
+﻿.navbar {
+      text-align: center;
+      margin-bottom: 50px;
+      }
 .register-links {
     color: #ffffff;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
-
-.register-links a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.mr15 {
-    margin-right: 15px;
-}
-
+.container-fluid {
+      display: inline-block;
+      }
 .mb60 {
     margin-bottom: 60px;
 }
@@ -81,9 +70,4 @@ color: #DDDDDD;
     background-color: #000;
     opacity: 0.5;
     z-index: 3000;
-}
-
-
-.mt50 {
-margin-top:50px;
 }
