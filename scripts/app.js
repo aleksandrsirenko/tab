@@ -1,8 +1,8 @@
-﻿var route = (function() {
+﻿var routeProvider = (function () {
     return {
         getRegister: function () {
             $.ajax({
-                url: '/registerForm.html',
+                url: '/register.html',
                 type: 'GET',
                 success: function(data) {
                     $('#main').html(data);
@@ -14,7 +14,7 @@
         },
         getLogin: function() {
             $.ajax({
-                url: '/loginForm.html',
+                url: '/login.html',
                 type: 'GET',
                 success: function(data) {
                     $('#main').html(data);
